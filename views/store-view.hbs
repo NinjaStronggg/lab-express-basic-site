@@ -1,0 +1,23 @@
+<h1>Choose your product</h1>
+<hr>
+<div class="row">
+{{#each product}}
+    <div class="col-md-3">
+
+    <div class="card" style="width: 18rem;">
+    <img src="{{thumbnail}}" class="card-img-top" alt="Product Image">
+    <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <h6 class="card-body">Description</h6>
+        <p class="card-text">{{description}}</p>
+        <p class="card-text">PRICE: {{price}}</p>
+        <p class="card-text">DISCOUNT: {{discountPercentage}}%</p>
+        <p class="card-text">STOCK: {{stock}}</p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+    </div>
+    </div>
+
+
+    </div>
+{{/each}}
+</div>
